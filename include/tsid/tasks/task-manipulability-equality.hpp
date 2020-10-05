@@ -61,12 +61,12 @@ namespace tsid
 
       const ConstraintBase &getConstraint() const;
 
-      void setReference(const Matrix6 & M, const Data::Tensor3x & M_J);
+      void setReference(const Matrix6 & M, const Matrix6 & M_dot);
 
   
       virtual void setMask(math::ConstRefVector mask);
-      void Kp(ConstRefVector Kp);
-      void Kd(ConstRefVector Kp);
+      void Kp(float Kp);
+      void Kd(float Kp);
 
 
       Index frame_id() const;
@@ -75,17 +75,29 @@ namespace tsid
       void fold(int mode,const Eigen::MatrixXd & M, Data::Tensor3x & folded);
 
     protected:
-      Vector m_Kp;
-      Vector m_Kd;
+      float m_Kp;
+      float m_Kd;
       std::string m_frame_name;
       Index m_joint_id;
 
      
       
       Matrix6x m_J;//jacobian
-      Matrix6 m_M, m_M_ref; //maniuplability
-      std::shared_ptr<Data::Tensor3x> m_M_J;
-      std::shared_ptr<Data::Tensor3x> m_M_J; //maniuplability jacobian 
+      Matrix6 m_M, m_M_ref, m_M_dot_mat, m_M_dot_mat_ref; //maniuplability
+      std::shared_ptr<Data::Tensor3x> m_MJ; //maniuplability jacobian 
+      std::shared_ptr<Data::Tensor3x> m_H; //hessian
+      std::shared_ptr<Data::Tensor3x> m_H_transpose; //derivative of the transpose of the jacobian
+
+      Eigen::MatrixXd m_H_t_J_mat, m_H_J_mat;//J*m_H_transpose(1) and J*m_H(3)
+      std::shared_ptr<Data::Tensor3x> m_H_t_J;//J*m_H_transpose(1) to tensor
+      std::shared_ptr<Data::Tensor3x> m_H_J;//J*m_H(3) to tensor
+      std::shared_ptr<Data::Tensor3x> m_M_dot;//J*m_H(3) to tensor
+
+      Eigen::MatrixXd m_constraint_prev;
+      float dt=0.001;
+      bool init = true;
+
+      
 
       ConstraintEquality m_constraint;
     };

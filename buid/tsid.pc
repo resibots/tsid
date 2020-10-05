@@ -1,0 +1,22 @@
+prefix=/home/user/ros_ws/devel
+exec_prefix=/home/user/ros_ws/devel
+libdir=/home/user/ros_ws/devel/lib
+bindir=/home/user/ros_ws/devel/bin
+pkglibdir=/home/user/ros_ws/devel/lib/tsid
+includedir=/home/user/ros_ws/devel/include
+datarootdir=/home/user/ros_ws/devel/share
+pkgdatarootdir=/home/user/ros_ws/devel/share
+docdir=/home/user/ros_ws/devel/share/doc/tsid
+doxygendocdir=/home/user/ros_ws/devel/share/doc/tsid/doxygen-html
+
+Name: tsid
+Description: Efficient Task Space Inverse Dynamics for Multi-body Systems based on Pinocchio
+URL: https://github.com/stack-of-tasks/tsid
+Version: 1.4.1
+Requires: pinocchio >= 2.3.1, eiquadprog >= 1.1.3
+Conflicts: 
+Libs: -L${libdir}  -ltsid
+Libs.private: 
+Cflags:  -I${includedir}
+
+

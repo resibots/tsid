@@ -1,0 +1,581 @@
+warning: source /home/user/tsid/doc/pictures is not a readable file or directory... skipping.
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor PortingIntro found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor PortingC found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor PortingCHeaderonly found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor PortingCNamespace found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor PortingCMacros found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor PortingCSignature found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor PortingPython found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor PortingPythonNamespace found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor PortingPythonRobotWrapper found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewIntro found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewInstall found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewSimple found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewSimpleCompile found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewSimpleExplain found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewComplex found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewComplexCompile found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewComplexExplain found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewPython found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewCite found
+
+/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/pinocchio.doxytag:15374: warning: Duplicate anchor OverviewConclu found
+
+<unknown>:1: warning: documented symbol `pinocchio::urdf::details::PINOCCHIO_URDF_SHARED_PTR' was not declared or defined.
+/home/user/tsid/include/tsid/solvers/solver-HQP-eiquadprog-rt.hxx:37: warning: documented symbol `tsid::solvers::SolverHQuadProgRT::SolverHQuadProgRT' was not declared or defined.
+/home/user/tsid/include/tsid/solvers/solver-HQP-eiquadprog-rt.hxx:48: warning: documented symbol `void tsid::solvers::SolverHQuadProgRT::sendMsg' was not declared or defined.
+/home/user/tsid/include/tsid/solvers/solver-HQP-eiquadprog-rt.hxx:54: warning: documented symbol `void tsid::solvers::SolverHQuadProgRT::resize' was not declared or defined.
+/home/user/tsid/include/tsid/solvers/solver-HQP-eiquadprog-rt.hxx:66: warning: no uniquely matching class member found for 
+  template < nVars, nEqCon, nIneqCon >
+  const HQPOutput & tsid::solvers::SolverHQuadProgRT::solve(const HQPData &problemData)
+
+/home/user/tsid/include/tsid/solvers/solver-HQP-eiquadprog-rt.hxx:235: warning: documented symbol `double tsid::solvers::SolverHQuadProgRT::getObjectiveValue' was not declared or defined.
+/home/user/tsid/include/tsid/solvers/solver-HQP-eiquadprog-rt.hxx:241: warning: documented symbol `bool tsid::solvers::SolverHQuadProgRT::setMaximumIterations' was not declared or defined.
+/home/user/tsid/include/tsid/solvers/solver-HQP-factory.hxx:31: warning: documented symbol `SolverHQPBase * tsid::solvers::SolverHQPFactory::createNewSolver' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:29: warning: documented symbol `Contact6d::Contact6d' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:50: warning: documented symbol `Contact6d::Contact6d' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:73: warning: documented symbol `void Contact6d::init' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:83: warning: documented symbol `void Contact6d::updateForceInequalityConstraints' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:120: warning: documented symbol `double Contact6d::getNormalForce' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:129: warning: documented symbol `void Contact6d::setRegularizationTaskWeightVector' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:135: warning: documented symbol `void Contact6d::updateForceRegularizationTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:144: warning: documented symbol `void Contact6d::updateForceGeneratorMatrix' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:155: warning: documented symbol `unsigned int Contact6d::n_motion' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:156: warning: documented symbol `unsigned int Contact6d::n_force' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:158: warning: documented symbol `const Vector & Contact6d::Kp' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:159: warning: documented symbol `const Vector & Contact6d::Kd' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:160: warning: documented symbol `void Contact6d::Kp' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:161: warning: documented symbol `void Contact6d::Kd' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:163: warning: documented symbol `bool Contact6d::setContactPoints' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:174: warning: documented symbol `bool Contact6d::setContactNormal' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:184: warning: documented symbol `bool Contact6d::setFrictionCoefficient' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:194: warning: documented symbol `bool Contact6d::setMinNormalForce' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:205: warning: documented symbol `bool Contact6d::setMaxNormalForce' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:216: warning: documented symbol `void Contact6d::setForceReference' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:222: warning: documented symbol `void Contact6d::setReference' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:229: warning: documented symbol `const ConstraintBase & Contact6d::computeMotionTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:237: warning: documented symbol `const ConstraintInequality & Contact6d::computeForceTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:245: warning: documented symbol `const Matrix & Contact6d::getForceGeneratorMatrix' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:250: warning: documented symbol `const ConstraintEquality & Contact6d::computeForceRegularizationTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:259: warning: documented symbol `double Contact6d::getMinNormalForce' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:260: warning: documented symbol `double Contact6d::getMaxNormalForce' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:262: warning: documented symbol `const TaskMotion & Contact6d::getMotionTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:264: warning: documented symbol `const ConstraintBase & Contact6d::getMotionConstraint' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:266: warning: documented symbol `const ConstraintInequality & Contact6d::getForceConstraint' was not declared or defined.
+/home/user/tsid/src/contacts/contact-6d.cpp:268: warning: documented symbol `const ConstraintEquality & Contact6d::getForceRegularizationTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-base.cpp:24: warning: documented symbol `tsid::contacts::ContactBase::ContactBase' was not declared or defined.
+/home/user/tsid/src/contacts/contact-base.cpp:30: warning: no uniquely matching class member found for 
+  const std::string & tsid::contacts::ContactBase::name() const
+
+/home/user/tsid/src/contacts/contact-base.cpp:35: warning: no uniquely matching class member found for 
+  void tsid::contacts::ContactBase::name(const std::string &name)
+
+/home/user/tsid/src/contacts/contact-point.cpp:29: warning: documented symbol `ContactPoint::ContactPoint' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:57: warning: documented symbol `void ContactPoint::useLocalFrame' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:62: warning: documented symbol `void ContactPoint::updateForceInequalityConstraints' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:91: warning: documented symbol `double ContactPoint::getNormalForce' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:97: warning: documented symbol `void ContactPoint::setRegularizationTaskWeightVector' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:103: warning: documented symbol `void ContactPoint::updateForceRegularizationTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:112: warning: documented symbol `void ContactPoint::updateForceGeneratorMatrix' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:117: warning: documented symbol `unsigned int ContactPoint::n_motion' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:118: warning: documented symbol `unsigned int ContactPoint::n_force' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:120: warning: documented symbol `const Vector & ContactPoint::Kp' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:121: warning: documented symbol `const Vector & ContactPoint::Kd' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:122: warning: documented symbol `void ContactPoint::Kp' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:130: warning: documented symbol `void ContactPoint::Kd' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:138: warning: documented symbol `bool ContactPoint::setContactNormal' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:148: warning: documented symbol `bool ContactPoint::setFrictionCoefficient' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:158: warning: documented symbol `bool ContactPoint::setMinNormalForce' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:169: warning: documented symbol `bool ContactPoint::setMaxNormalForce' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:180: warning: documented symbol `void ContactPoint::setForceReference' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:186: warning: documented symbol `void ContactPoint::setReference' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:193: warning: documented symbol `const ConstraintBase & ContactPoint::computeMotionTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:201: warning: documented symbol `const ConstraintInequality & ContactPoint::computeForceTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:209: warning: documented symbol `const Matrix & ContactPoint::getForceGeneratorMatrix' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:214: warning: documented symbol `const ConstraintEquality & ContactPoint::computeForceRegularizationTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:223: warning: documented symbol `double ContactPoint::getMinNormalForce' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:224: warning: documented symbol `double ContactPoint::getMaxNormalForce' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:226: warning: documented symbol `const TaskMotion & ContactPoint::getMotionTask' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:228: warning: documented symbol `const ConstraintBase & ContactPoint::getMotionConstraint' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:230: warning: documented symbol `const ConstraintInequality & ContactPoint::getForceConstraint' was not declared or defined.
+/home/user/tsid/src/contacts/contact-point.cpp:232: warning: documented symbol `const ConstraintEquality & ContactPoint::getForceRegularizationTask' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:30: warning: documented symbol `TaskLevel::TaskLevel' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:37: warning: documented symbol `ContactLevel::ContactLevel' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:42: warning: documented symbol `InverseDynamicsFormulationAccForce::InverseDynamicsFormulationAccForce' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:62: warning: documented symbol `Data & InverseDynamicsFormulationAccForce::data' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:67: warning: documented symbol `unsigned int InverseDynamicsFormulationAccForce::nVar' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:72: warning: documented symbol `unsigned int InverseDynamicsFormulationAccForce::nEq' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:77: warning: documented symbol `unsigned int InverseDynamicsFormulationAccForce::nIn' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:83: warning: documented symbol `void InverseDynamicsFormulationAccForce::resizeHqpData' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:97: warning: documented symbol `void InverseDynamicsFormulationAccForce::addTask' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:123: warning: documented symbol `bool InverseDynamicsFormulationAccForce::addMotionTask' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:148: warning: documented symbol `bool InverseDynamicsFormulationAccForce::addForceTask' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:170: warning: documented symbol `bool InverseDynamicsFormulationAccForce::addActuationTask' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:210: warning: documented symbol `bool InverseDynamicsFormulationAccForce::updateTaskWeight' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:230: warning: documented symbol `bool InverseDynamicsFormulationAccForce::addRigidContact' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:259: warning: documented symbol `bool InverseDynamicsFormulationAccForce::addRigidContact' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:265: warning: documented symbol `bool InverseDynamicsFormulationAccForce::updateRigidContactWeights' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:299: warning: documented symbol `const HQPData & InverseDynamicsFormulationAccForce::computeProblemData' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:428: warning: documented symbol `bool InverseDynamicsFormulationAccForce::decodeSolution' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:444: warning: documented symbol `const Vector & InverseDynamicsFormulationAccForce::getActuatorForces' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:450: warning: documented symbol `const Vector & InverseDynamicsFormulationAccForce::getAccelerations' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:456: warning: documented symbol `const Vector & InverseDynamicsFormulationAccForce::getContactForces' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:462: warning: documented symbol `Vector InverseDynamicsFormulationAccForce::getContactForces' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:478: warning: documented symbol `bool InverseDynamicsFormulationAccForce::getContactForces' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:496: warning: documented symbol `bool InverseDynamicsFormulationAccForce::removeTask' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:548: warning: documented symbol `bool InverseDynamicsFormulationAccForce::removeRigidContact' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-acc-force.cpp:612: warning: documented symbol `bool InverseDynamicsFormulationAccForce::removeFromHqpData' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-base.cpp:24: warning: documented symbol `tsid::InverseDynamicsFormulationBase::InverseDynamicsFormulationBase' was not declared or defined.
+/home/user/tsid/src/formulations/inverse-dynamics-formulation-base.cpp:32: warning: documented symbol `bool tsid::InverseDynamicsFormulationBase::addRigidContact' was not declared or defined.
+/home/user/tsid/src/math/constraint-base.cpp:22: warning: documented symbol `ConstraintBase::ConstraintBase' was not declared or defined.
+/home/user/tsid/src/math/constraint-base.cpp:25: warning: documented symbol `ConstraintBase::ConstraintBase' was not declared or defined.
+/home/user/tsid/src/math/constraint-base.cpp:33: warning: documented symbol `ConstraintBase::ConstraintBase' was not declared or defined.
+/home/user/tsid/src/math/constraint-base.cpp:39: warning: no uniquely matching class member found for 
+  const std::string & ConstraintBase::name() const
+
+/home/user/tsid/src/math/constraint-base.cpp:44: warning: documented symbol `const Matrix & ConstraintBase::matrix' was not declared or defined.
+/home/user/tsid/src/math/constraint-base.cpp:49: warning: documented symbol `Matrix & ConstraintBase::matrix' was not declared or defined.
+/home/user/tsid/src/math/constraint-base.cpp:54: warning: documented symbol `bool ConstraintBase::setMatrix' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:23: warning: documented symbol `ConstraintBound::ConstraintBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:27: warning: documented symbol `ConstraintBound::ConstraintBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:34: warning: documented symbol `ConstraintBound::ConstraintBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:44: warning: documented symbol `unsigned int ConstraintBound::rows' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:50: warning: documented symbol `unsigned int ConstraintBound::cols' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:56: warning: documented symbol `void ConstraintBound::resize' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:64: warning: documented symbol `bool ConstraintBound::isEquality' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:65: warning: documented symbol `bool ConstraintBound::isInequality' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:66: warning: documented symbol `bool ConstraintBound::isBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:68: warning: documented symbol `const Vector & ConstraintBound::vector' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:69: warning: documented symbol `const Vector & ConstraintBound::lowerBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:70: warning: documented symbol `const Vector & ConstraintBound::upperBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:72: warning: documented symbol `Vector & ConstraintBound::vector' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:73: warning: documented symbol `Vector & ConstraintBound::lowerBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:74: warning: documented symbol `Vector & ConstraintBound::upperBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:76: warning: documented symbol `bool ConstraintBound::setVector' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:77: warning: documented symbol `bool ConstraintBound::setLowerBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:78: warning: documented symbol `bool ConstraintBound::setUpperBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-bound.cpp:80: warning: documented symbol `bool ConstraintBound::checkConstraint' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:22: warning: documented symbol `ConstraintEquality::ConstraintEquality' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:26: warning: documented symbol `ConstraintEquality::ConstraintEquality' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:33: warning: documented symbol `ConstraintEquality::ConstraintEquality' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:42: warning: documented symbol `unsigned int ConstraintEquality::rows' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:48: warning: documented symbol `unsigned int ConstraintEquality::cols' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:53: warning: documented symbol `void ConstraintEquality::resize' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:59: warning: documented symbol `bool ConstraintEquality::isEquality' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:60: warning: documented symbol `bool ConstraintEquality::isInequality' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:61: warning: documented symbol `bool ConstraintEquality::isBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:63: warning: documented symbol `const Vector & ConstraintEquality::vector' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:64: warning: documented symbol `const Vector & ConstraintEquality::lowerBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:65: warning: documented symbol `const Vector & ConstraintEquality::upperBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:67: warning: documented symbol `Vector & ConstraintEquality::vector' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:68: warning: documented symbol `Vector & ConstraintEquality::lowerBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:69: warning: documented symbol `Vector & ConstraintEquality::upperBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:71: warning: documented symbol `bool ConstraintEquality::setVector' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:72: warning: documented symbol `bool ConstraintEquality::setLowerBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:73: warning: documented symbol `bool ConstraintEquality::setUpperBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-equality.cpp:75: warning: documented symbol `bool ConstraintEquality::checkConstraint' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:22: warning: documented symbol `ConstraintInequality::ConstraintInequality' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:26: warning: documented symbol `ConstraintInequality::ConstraintInequality' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:34: warning: documented symbol `ConstraintInequality::ConstraintInequality' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:46: warning: documented symbol `unsigned int ConstraintInequality::rows' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:53: warning: documented symbol `unsigned int ConstraintInequality::cols' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:58: warning: documented symbol `void ConstraintInequality::resize' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:65: warning: documented symbol `bool ConstraintInequality::isEquality' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:66: warning: documented symbol `bool ConstraintInequality::isInequality' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:67: warning: documented symbol `bool ConstraintInequality::isBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:69: warning: documented symbol `const Vector & ConstraintInequality::vector' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:70: warning: documented symbol `const Vector & ConstraintInequality::lowerBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:71: warning: documented symbol `const Vector & ConstraintInequality::upperBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:73: warning: documented symbol `Vector & ConstraintInequality::vector' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:74: warning: documented symbol `Vector & ConstraintInequality::lowerBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:75: warning: documented symbol `Vector & ConstraintInequality::upperBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:77: warning: documented symbol `bool ConstraintInequality::setVector' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:78: warning: documented symbol `bool ConstraintInequality::setLowerBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:79: warning: documented symbol `bool ConstraintInequality::setUpperBound' was not declared or defined.
+/home/user/tsid/src/math/constraint-inequality.cpp:81: warning: documented symbol `bool ConstraintInequality::checkConstraint' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:36: warning: documented symbol `tsid::robots::RobotWrapper::RobotWrapper' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:47: warning: documented symbol `tsid::robots::RobotWrapper::RobotWrapper' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:56: warning: documented symbol `tsid::robots::RobotWrapper::RobotWrapper' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:68: warning: documented symbol `void tsid::robots::RobotWrapper::init' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:76: warning: no uniquely matching class member found for 
+  int tsid::robots::RobotWrapper::nq() const
+
+/home/user/tsid/src/robots/robot-wrapper.cpp:77: warning: no uniquely matching class member found for 
+  int tsid::robots::RobotWrapper::nv() const
+
+/home/user/tsid/src/robots/robot-wrapper.cpp:78: warning: documented symbol `int tsid::robots::RobotWrapper::na' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:80: warning: documented symbol `const Model & tsid::robots::RobotWrapper::model' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:81: warning: documented symbol `Model & tsid::robots::RobotWrapper::model' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:83: warning: no matching file member found for 
+void tsid::robots::RobotWrapper::computeAllTerms(Data &data, const Vector &q, const Vector &v) const
+Possible candidates:
+ 'void computeAllTerms(const ModelTpl< Scalar, Options, JointCollectionTpl > &model, DataTpl< Scalar, Options, JointCollectionTpl > &data, const Eigen::MatrixBase< ConfigVectorType > &q, const Eigen::MatrixBase< TangentVectorType > &v)' at line 1 of file
+
+/home/user/tsid/src/robots/robot-wrapper.cpp:96: warning: documented symbol `const Vector & tsid::robots::RobotWrapper::rotor_inertias' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:100: warning: documented symbol `const Vector & tsid::robots::RobotWrapper::gear_ratios' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:105: warning: documented symbol `bool tsid::robots::RobotWrapper::rotor_inertias' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:113: warning: documented symbol `bool tsid::robots::RobotWrapper::gear_ratios' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:121: warning: documented symbol `void tsid::robots::RobotWrapper::updateMd' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:126: warning: documented symbol `void tsid::robots::RobotWrapper::com' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:136: warning: documented symbol `const Vector3 & tsid::robots::RobotWrapper::com' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:141: warning: documented symbol `const Vector3 & tsid::robots::RobotWrapper::com_vel' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:146: warning: documented symbol `const Vector3 & tsid::robots::RobotWrapper::com_acc' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:151: warning: no uniquely matching class member found for 
+  const Matrix3x & tsid::robots::RobotWrapper::Jcom(const Data &data) const
+
+/home/user/tsid/src/robots/robot-wrapper.cpp:156: warning: no uniquely matching class member found for 
+  const Matrix & tsid::robots::RobotWrapper::mass(const Data &data)
+
+/home/user/tsid/src/robots/robot-wrapper.cpp:163: warning: no matching file member found for 
+const Vector & tsid::robots::RobotWrapper::nonLinearEffects(const Data &data) const
+Possible candidates:
+ 'const DataTpl< Scalar, Options, JointCollectionTpl >::TangentVectorType & nonLinearEffects(const ModelTpl< Scalar, Options, JointCollectionTpl > &model, DataTpl< Scalar, Options, JointCollectionTpl > &data, const Eigen::MatrixBase< ConfigVectorType > &q, const Eigen::MatrixBase< TangentVectorType > &v)' at line 1 of file
+
+/home/user/tsid/src/robots/robot-wrapper.cpp:168: warning: documented symbol `const SE3 & tsid::robots::RobotWrapper::position' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:175: warning: documented symbol `const Motion & tsid::robots::RobotWrapper::velocity' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:182: warning: documented symbol `const Motion & tsid::robots::RobotWrapper::acceleration' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:189: warning: documented symbol `void tsid::robots::RobotWrapper::jacobianWorld' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:197: warning: documented symbol `void tsid::robots::RobotWrapper::jacobianLocal' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:205: warning: documented symbol `SE3 tsid::robots::RobotWrapper::framePosition' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:213: warning: documented symbol `void tsid::robots::RobotWrapper::framePosition' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:222: warning: documented symbol `Motion tsid::robots::RobotWrapper::frameVelocity' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:230: warning: documented symbol `void tsid::robots::RobotWrapper::frameVelocity' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:239: warning: documented symbol `Motion tsid::robots::RobotWrapper::frameVelocityWorldOriented' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:251: warning: documented symbol `Motion tsid::robots::RobotWrapper::frameAcceleration' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:259: warning: documented symbol `void tsid::robots::RobotWrapper::frameAcceleration' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:268: warning: documented symbol `Motion tsid::robots::RobotWrapper::frameAccelerationWorldOriented' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:280: warning: documented symbol `Motion tsid::robots::RobotWrapper::frameClassicAcceleration' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:291: warning: documented symbol `void tsid::robots::RobotWrapper::frameClassicAcceleration' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:302: warning: documented symbol `Motion tsid::robots::RobotWrapper::frameClassicAccelerationWorldOriented' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:314: warning: documented symbol `void tsid::robots::RobotWrapper::frameJacobianWorld' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:322: warning: documented symbol `void tsid::robots::RobotWrapper::frameJacobianLocal' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:330: warning: documented symbol `const Data::Matrix6x & tsid::robots::RobotWrapper::momentumJacobian' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:335: warning: documented symbol `Vector3 tsid::robots::RobotWrapper::angularMomentumTimeVariation' was not declared or defined.
+/home/user/tsid/src/robots/robot-wrapper.cpp:339: warning: documented symbol `void tsid::robots::RobotWrapper::setGravity' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-base.cpp:27: warning: documented symbol `std::string const tsid::solvers::SolverHQPBase::HQP_status_string' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-base.cpp:33: warning: documented symbol `tsid::solvers::SolverHQPBase::SolverHQPBase' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-base.cpp:41: warning: documented symbol `bool tsid::solvers::SolverHQPBase::setMaximumIterations' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-base.cpp:49: warning: documented symbol `bool tsid::solvers::SolverHQPBase::setMaximumTime' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog-fast.cpp:33: warning: documented symbol `tsid::solvers::SolverHQuadProgFast::SolverHQuadProgFast' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog-fast.cpp:42: warning: documented symbol `void tsid::solvers::SolverHQuadProgFast::sendMsg' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog-fast.cpp:47: warning: documented symbol `void tsid::solvers::SolverHQuadProgFast::resize' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog-fast.cpp:89: warning: no uniquely matching class member found for 
+  const HQPOutput & tsid::solvers::SolverHQuadProgFast::solve(const HQPData &problemData)
+
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog-fast.cpp:243: warning: documented symbol `double tsid::solvers::SolverHQuadProgFast::getObjectiveValue' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog-fast.cpp:248: warning: documented symbol `bool tsid::solvers::SolverHQuadProgFast::setMaximumIterations' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog.cpp:27: warning: documented symbol `SolverHQuadProg::SolverHQuadProg' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog.cpp:36: warning: documented symbol `void SolverHQuadProg::sendMsg' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog.cpp:41: warning: documented symbol `void SolverHQuadProg::resize' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog.cpp:78: warning: no uniquely matching class member found for 
+  const HQPOutput & SolverHQuadProg::solve(const HQPData &problemData)
+
+/home/user/tsid/src/solvers/solver-HQP-eiquadprog.cpp:292: warning: documented symbol `double SolverHQuadProg::getObjectiveValue' was not declared or defined.
+/home/user/tsid/src/solvers/solver-HQP-factory.cpp:31: warning: documented symbol `SolverHQPBase * tsid::solvers::SolverHQPFactory::createNewSolver' was not declared or defined.
+/home/user/tsid/src/tasks/task-actuation-bounds.cpp:29: warning: documented symbol `tsid::tasks::TaskActuationBounds::TaskActuationBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-actuation-bounds.cpp:38: warning: documented symbol `const Vector & tsid::tasks::TaskActuationBounds::mask' was not declared or defined.
+/home/user/tsid/src/tasks/task-actuation-bounds.cpp:43: warning: documented symbol `void tsid::tasks::TaskActuationBounds::mask' was not declared or defined.
+/home/user/tsid/src/tasks/task-actuation-bounds.cpp:63: warning: documented symbol `int tsid::tasks::TaskActuationBounds::dim' was not declared or defined.
+/home/user/tsid/src/tasks/task-actuation-bounds.cpp:68: warning: documented symbol `const Vector & tsid::tasks::TaskActuationBounds::getLowerBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-actuation-bounds.cpp:70: warning: documented symbol `const Vector & tsid::tasks::TaskActuationBounds::getUpperBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-actuation-bounds.cpp:72: warning: documented symbol `void tsid::tasks::TaskActuationBounds::setBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-actuation-bounds.cpp:80: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskActuationBounds::getConstraint' was not declared or defined.
+/home/user/tsid/src/tasks/task-actuation-bounds.cpp:85: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskActuationBounds::compute' was not declared or defined.
+/home/user/tsid/src/tasks/task-actuation.cpp:26: warning: documented symbol `tsid::tasks::TaskActuation::TaskActuation' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:31: warning: documented symbol `tsid::tasks::TaskAMEquality::TaskAMEquality' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:45: warning: documented symbol `int tsid::tasks::TaskAMEquality::dim' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:51: warning: documented symbol `const Vector3 & tsid::tasks::TaskAMEquality::Kp' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:53: warning: documented symbol `const Vector3 & tsid::tasks::TaskAMEquality::Kd' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:55: warning: documented symbol `void tsid::tasks::TaskAMEquality::Kp' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:61: warning: documented symbol `void tsid::tasks::TaskAMEquality::Kd' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:67: warning: documented symbol `void tsid::tasks::TaskAMEquality::setReference' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:72: warning: documented symbol `const TrajectorySample & tsid::tasks::TaskAMEquality::getReference' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:77: warning: documented symbol `const Vector3 & tsid::tasks::TaskAMEquality::getDesiredMomentumDerivative' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:82: warning: documented symbol `Vector3 tsid::tasks::TaskAMEquality::getdMomentum' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:87: warning: documented symbol `const Vector3 & tsid::tasks::TaskAMEquality::momentum_error' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:92: warning: documented symbol `const Vector3 & tsid::tasks::TaskAMEquality::momentum' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:96: warning: documented symbol `const Vector & tsid::tasks::TaskAMEquality::momentum_ref' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:101: warning: documented symbol `const Vector & tsid::tasks::TaskAMEquality::dmomentum_ref' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:106: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskAMEquality::getConstraint' was not declared or defined.
+/home/user/tsid/src/tasks/task-angular-momentum-equality.cpp:111: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskAMEquality::compute' was not declared or defined.
+/home/user/tsid/src/tasks/task-base.cpp:24: warning: documented symbol `tsid::tasks::TaskBase::TaskBase' was not declared or defined.
+/home/user/tsid/src/tasks/task-base.cpp:30: warning: no uniquely matching class member found for 
+  const std::string & tsid::tasks::TaskBase::name() const
+
+/home/user/tsid/src/tasks/task-base.cpp:35: warning: no uniquely matching class member found for 
+  void tsid::tasks::TaskBase::name(const std::string &name)
+
+/home/user/tsid/src/tasks/task-capture-point-inequality.cpp:34: warning: documented symbol `tsid::tasks::TaskCapturePointInequality::TaskCapturePointInequality' was not declared or defined.
+/home/user/tsid/src/tasks/task-capture-point-inequality.cpp:64: warning: documented symbol `int tsid::tasks::TaskCapturePointInequality::dim' was not declared or defined.
+/home/user/tsid/src/tasks/task-capture-point-inequality.cpp:69: warning: no matching file member found for 
+Vector tsid::tasks::TaskCapturePointInequality::getAcceleration(ConstRefVector dv) const
+Possible candidates:
+ 'MotionTpl< Scalar, Options > getAcceleration(const ModelTpl< Scalar, Options, JointCollectionTpl > &model, const DataTpl< Scalar, Options, JointCollectionTpl > &data, const JointIndex jointId, const ReferenceFrame rf=LOCAL)' at line 1 of file
+
+/home/user/tsid/src/tasks/task-capture-point-inequality.cpp:74: warning: documented symbol `const Vector & tsid::tasks::TaskCapturePointInequality::position' was not declared or defined.
+/home/user/tsid/src/tasks/task-capture-point-inequality.cpp:78: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskCapturePointInequality::getConstraint' was not declared or defined.
+/home/user/tsid/src/tasks/task-capture-point-inequality.cpp:83: warning: documented symbol `void tsid::tasks::TaskCapturePointInequality::setSupportLimitsXAxis' was not declared or defined.
+/home/user/tsid/src/tasks/task-capture-point-inequality.cpp:90: warning: documented symbol `void tsid::tasks::TaskCapturePointInequality::setSupportLimitsYAxis' was not declared or defined.
+/home/user/tsid/src/tasks/task-capture-point-inequality.cpp:97: warning: documented symbol `void tsid::tasks::TaskCapturePointInequality::setSafetyMargin' was not declared or defined.
+/home/user/tsid/src/tasks/task-capture-point-inequality.cpp:103: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskCapturePointInequality::compute' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:29: warning: documented symbol `tsid::tasks::TaskComEquality::TaskComEquality' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:43: warning: documented symbol `int tsid::tasks::TaskComEquality::dim' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:49: warning: documented symbol `const Vector3 & tsid::tasks::TaskComEquality::Kp' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:51: warning: documented symbol `const Vector3 & tsid::tasks::TaskComEquality::Kd' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:53: warning: documented symbol `void tsid::tasks::TaskComEquality::Kp' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:59: warning: documented symbol `void tsid::tasks::TaskComEquality::Kd' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:65: warning: documented symbol `void tsid::tasks::TaskComEquality::setReference' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:70: warning: documented symbol `const TrajectorySample & tsid::tasks::TaskComEquality::getReference' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:75: warning: documented symbol `const Vector & tsid::tasks::TaskComEquality::getDesiredAcceleration' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:80: warning: no matching file member found for 
+Vector tsid::tasks::TaskComEquality::getAcceleration(ConstRefVector dv) const
+Possible candidates:
+ 'MotionTpl< Scalar, Options > getAcceleration(const ModelTpl< Scalar, Options, JointCollectionTpl > &model, const DataTpl< Scalar, Options, JointCollectionTpl > &data, const JointIndex jointId, const ReferenceFrame rf=LOCAL)' at line 1 of file
+
+/home/user/tsid/src/tasks/task-com-equality.cpp:85: warning: documented symbol `const Vector & tsid::tasks::TaskComEquality::position_error' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:90: warning: documented symbol `const Vector & tsid::tasks::TaskComEquality::velocity_error' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:95: warning: documented symbol `const Vector & tsid::tasks::TaskComEquality::position' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:100: warning: documented symbol `const Vector & tsid::tasks::TaskComEquality::velocity' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:105: warning: documented symbol `const Vector & tsid::tasks::TaskComEquality::position_ref' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:110: warning: documented symbol `const Vector & tsid::tasks::TaskComEquality::velocity_ref' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:115: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskComEquality::getConstraint' was not declared or defined.
+/home/user/tsid/src/tasks/task-com-equality.cpp:120: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskComEquality::compute' was not declared or defined.
+/home/user/tsid/src/tasks/task-contact-force.cpp:26: warning: documented symbol `tsid::tasks::TaskContactForce::TaskContactForce' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:29: warning: documented symbol `tsid::tasks::TaskJointBounds::TaskJointBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:54: warning: documented symbol `int tsid::tasks::TaskJointBounds::dim' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:57: warning: documented symbol `const Vector & tsid::tasks::TaskJointBounds::getAccelerationLowerBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:60: warning: documented symbol `const Vector & tsid::tasks::TaskJointBounds::getAccelerationUpperBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:63: warning: documented symbol `const Vector & tsid::tasks::TaskJointBounds::getVelocityLowerBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:66: warning: documented symbol `const Vector & tsid::tasks::TaskJointBounds::getVelocityUpperBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:69: warning: documented symbol `void tsid::tasks::TaskJointBounds::setTimeStep' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:75: warning: documented symbol `void tsid::tasks::TaskJointBounds::setVelocityBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:83: warning: documented symbol `void tsid::tasks::TaskJointBounds::setAccelerationBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:91: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskJointBounds::getConstraint' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-bounds.cpp:96: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskJointBounds::compute' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:29: warning: documented symbol `tsid::tasks::TaskJointPosture::TaskJointPosture' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:41: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosture::mask' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:46: warning: documented symbol `void tsid::tasks::TaskJointPosture::mask' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:66: warning: documented symbol `int tsid::tasks::TaskJointPosture::dim' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:71: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosture::Kp' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:73: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosture::Kd' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:75: warning: documented symbol `void tsid::tasks::TaskJointPosture::Kp' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:81: warning: documented symbol `void tsid::tasks::TaskJointPosture::Kd' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:87: warning: documented symbol `void tsid::tasks::TaskJointPosture::setReference' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:95: warning: documented symbol `const TrajectorySample & tsid::tasks::TaskJointPosture::getReference' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:100: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosture::getDesiredAcceleration' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:105: warning: no matching file member found for 
+Vector tsid::tasks::TaskJointPosture::getAcceleration(ConstRefVector dv) const
+Possible candidates:
+ 'MotionTpl< Scalar, Options > getAcceleration(const ModelTpl< Scalar, Options, JointCollectionTpl > &model, const DataTpl< Scalar, Options, JointCollectionTpl > &data, const JointIndex jointId, const ReferenceFrame rf=LOCAL)' at line 1 of file
+
+/home/user/tsid/src/tasks/task-joint-posture.cpp:110: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosture::position_error' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:115: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosture::velocity_error' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:120: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosture::position' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:125: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosture::velocity' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:130: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosture::position_ref' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:135: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosture::velocity_ref' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:140: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskJointPosture::getConstraint' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posture.cpp:145: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskJointPosture::compute' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:37: warning: documented symbol `tsid::tasks::TaskJointPosVelAccBounds::TaskJointPosVelAccBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:115: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosVelAccBounds::mask' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:120: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::mask' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:140: warning: documented symbol `int tsid::tasks::TaskJointPosVelAccBounds::dim' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:143: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosVelAccBounds::getAccelerationBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:146: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosVelAccBounds::getVelocityBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:149: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosVelAccBounds::getPositionLowerBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:152: warning: documented symbol `const Vector & tsid::tasks::TaskJointPosVelAccBounds::getPositionUpperBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:155: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::setTimeStep' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:161: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::setVerbose' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:165: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::setPositionBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:175: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::setVelocityBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:182: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::setAccelerationBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:189: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskJointPosVelAccBounds::getConstraint' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:194: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskJointPosVelAccBounds::compute' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:210: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::setImposeBounds' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:222: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::isStateViable' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:281: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::computeAccLimitsFromPosLimits' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:340: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::computeAccLimitsFromViability' was not declared or defined.
+/home/user/tsid/src/tasks/task-joint-posVelAcc-bounds.cpp:393: warning: documented symbol `void tsid::tasks::TaskJointPosVelAccBounds::computeAccLimits' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:30: warning: documented symbol `tsid::tasks::TaskManipEquality::TaskManipEquality' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:91: warning: documented symbol `void tsid::tasks::TaskManipEquality::setMask' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:103: warning: documented symbol `void tsid::tasks::TaskManipEquality::Kp' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:108: warning: documented symbol `void tsid::tasks::TaskManipEquality::Kd' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:130: warning: documented symbol `int tsid::tasks::TaskManipEquality::dim' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:135: warning: documented symbol `void tsid::tasks::TaskManipEquality::setReference' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:141: warning: documented symbol `Index tsid::tasks::TaskManipEquality::frame_id' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:146: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskManipEquality::getConstraint' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:152: warning: documented symbol `Eigen::MatrixXd tsid::tasks::TaskManipEquality::unfold' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:196: warning: documented symbol `void tsid::tasks::TaskManipEquality::fold' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:240: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskManipEquality::compute' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:28: warning: documented symbol `tsid::tasks::TaskMotion::TaskMotion' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:33: warning: documented symbol `void tsid::tasks::TaskMotion::setMask' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:38: warning: documented symbol `bool tsid::tasks::TaskMotion::hasMask' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:43: warning: documented symbol `const TrajectorySample & tsid::tasks::TaskMotion::getReference' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:45: warning: documented symbol `const Vector & tsid::tasks::TaskMotion::getDesiredAcceleration' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:47: warning: no matching file member found for 
+Vector tsid::tasks::TaskMotion::getAcceleration(ConstRefVector) const
+Possible candidates:
+ 'MotionTpl< Scalar, Options > getAcceleration(const ModelTpl< Scalar, Options, JointCollectionTpl > &model, const DataTpl< Scalar, Options, JointCollectionTpl > &data, const JointIndex jointId, const ReferenceFrame rf=LOCAL)' at line 1 of file
+
+/home/user/tsid/src/tasks/task-motion.cpp:49: warning: documented symbol `const Vector & tsid::tasks::TaskMotion::position_error' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:50: warning: documented symbol `const Vector & tsid::tasks::TaskMotion::velocity_error' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:51: warning: documented symbol `const Vector & tsid::tasks::TaskMotion::position' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:52: warning: documented symbol `const Vector & tsid::tasks::TaskMotion::velocity' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:53: warning: documented symbol `const Vector & tsid::tasks::TaskMotion::position_ref' was not declared or defined.
+/home/user/tsid/src/tasks/task-motion.cpp:54: warning: documented symbol `const Vector & tsid::tasks::TaskMotion::velocity_ref' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:30: warning: documented symbol `tsid::tasks::TaskSE3Equality::TaskSE3Equality' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:64: warning: documented symbol `void tsid::tasks::TaskSE3Equality::setMask' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:75: warning: documented symbol `int tsid::tasks::TaskSE3Equality::dim' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:80: warning: documented symbol `const Vector & tsid::tasks::TaskSE3Equality::Kp' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:82: warning: documented symbol `const Vector & tsid::tasks::TaskSE3Equality::Kd' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:84: warning: documented symbol `void tsid::tasks::TaskSE3Equality::Kp' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:90: warning: documented symbol `void tsid::tasks::TaskSE3Equality::Kd' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:96: warning: documented symbol `void tsid::tasks::TaskSE3Equality::setReference' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:104: warning: documented symbol `const TrajectorySample & tsid::tasks::TaskSE3Equality::getReference' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:109: warning: documented symbol `const Vector & tsid::tasks::TaskSE3Equality::position_error' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:114: warning: documented symbol `const Vector & tsid::tasks::TaskSE3Equality::velocity_error' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:119: warning: documented symbol `const Vector & tsid::tasks::TaskSE3Equality::position' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:124: warning: documented symbol `const Vector & tsid::tasks::TaskSE3Equality::velocity' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:129: warning: documented symbol `const Vector & tsid::tasks::TaskSE3Equality::position_ref' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:134: warning: documented symbol `const Vector & tsid::tasks::TaskSE3Equality::velocity_ref' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:139: warning: documented symbol `const Vector & tsid::tasks::TaskSE3Equality::getDesiredAcceleration' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:144: warning: no matching file member found for 
+Vector tsid::tasks::TaskSE3Equality::getAcceleration(ConstRefVector dv) const
+Possible candidates:
+ 'MotionTpl< Scalar, Options > getAcceleration(const ModelTpl< Scalar, Options, JointCollectionTpl > &model, const DataTpl< Scalar, Options, JointCollectionTpl > &data, const JointIndex jointId, const ReferenceFrame rf=LOCAL)' at line 1 of file
+
+/home/user/tsid/src/tasks/task-se3-equality.cpp:149: warning: documented symbol `Index tsid::tasks::TaskSE3Equality::frame_id' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:154: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskSE3Equality::getConstraint' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:159: warning: documented symbol `void tsid::tasks::TaskSE3Equality::useLocalFrame' was not declared or defined.
+/home/user/tsid/src/tasks/task-se3-equality.cpp:164: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskSE3Equality::compute' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-euclidian.cpp:25: warning: documented symbol `tsid::trajectories::TrajectoryEuclidianConstant::TrajectoryEuclidianConstant' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-euclidian.cpp:29: warning: documented symbol `tsid::trajectories::TrajectoryEuclidianConstant::TrajectoryEuclidianConstant' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-euclidian.cpp:36: warning: documented symbol `void tsid::trajectories::TrajectoryEuclidianConstant::setReference' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-euclidian.cpp:43: warning: documented symbol `unsigned int tsid::trajectories::TrajectoryEuclidianConstant::size' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-euclidian.cpp:48: warning: documented symbol `const TrajectorySample & tsid::trajectories::TrajectoryEuclidianConstant::operator()' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-euclidian.cpp:53: warning: documented symbol `const TrajectorySample & tsid::trajectories::TrajectoryEuclidianConstant::computeNext' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-euclidian.cpp:58: warning: documented symbol `void tsid::trajectories::TrajectoryEuclidianConstant::getLastSample' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-euclidian.cpp:63: warning: documented symbol `bool tsid::trajectories::TrajectoryEuclidianConstant::has_trajectory_ended' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-se3.cpp:28: warning: documented symbol `tsid::trajectories::TrajectorySE3Constant::TrajectorySE3Constant' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-se3.cpp:34: warning: documented symbol `tsid::trajectories::TrajectorySE3Constant::TrajectorySE3Constant' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-se3.cpp:42: warning: documented symbol `unsigned int tsid::trajectories::TrajectorySE3Constant::size' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-se3.cpp:47: warning: documented symbol `void tsid::trajectories::TrajectorySE3Constant::setReference' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-se3.cpp:53: warning: documented symbol `const TrajectorySample & tsid::trajectories::TrajectorySE3Constant::operator()' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-se3.cpp:58: warning: documented symbol `const TrajectorySample & tsid::trajectories::TrajectorySE3Constant::computeNext' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-se3.cpp:63: warning: documented symbol `void tsid::trajectories::TrajectorySE3Constant::getLastSample' was not declared or defined.
+/home/user/tsid/src/trajectories/trajectory-se3.cpp:68: warning: documented symbol `bool tsid::trajectories::TrajectorySE3Constant::has_trajectory_ended' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:32: warning: documented symbol `Statistics::Statistics' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:38: warning: documented symbol `Statistics::~Statistics' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:43: warning: documented symbol `bool Statistics::quantity_exists' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:48: warning: documented symbol `void Statistics::store' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:72: warning: documented symbol `void Statistics::reset_all' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:83: warning: documented symbol `void Statistics::report_all' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:95: warning: documented symbol `void Statistics::reset' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:112: warning: documented symbol `void Statistics::turn_on' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:118: warning: documented symbol `void Statistics::turn_off' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:124: warning: documented symbol `void Statistics::report' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:153: warning: documented symbol `long double Statistics::get_total' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:165: warning: documented symbol `long double Statistics::get_average' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:177: warning: documented symbol `long double Statistics::get_min' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:189: warning: documented symbol `long double Statistics::get_max' was not declared or defined.
+/home/user/tsid/src/utils/statistics.cpp:201: warning: documented symbol `long double Statistics::get_last' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:50: warning: documented symbol `Stopwatch::Stopwatch' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:56: warning: documented symbol `Stopwatch::~Stopwatch' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:61: warning: documented symbol `void Stopwatch::set_mode' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:66: warning: documented symbol `bool Stopwatch::performance_exists' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:71: warning: documented symbol `long double Stopwatch::take_time' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:116: warning: documented symbol `void Stopwatch::start' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:135: warning: documented symbol `void Stopwatch::stop' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:169: warning: documented symbol `void Stopwatch::pause' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:192: warning: documented symbol `void Stopwatch::reset_all' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:203: warning: documented symbol `void Stopwatch::report_all' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:221: warning: documented symbol `void Stopwatch::reset' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:240: warning: documented symbol `void Stopwatch::turn_on' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:246: warning: documented symbol `void Stopwatch::turn_off' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:252: warning: documented symbol `void Stopwatch::report' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:277: warning: documented symbol `long double Stopwatch::get_time_so_far' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:292: warning: documented symbol `long double Stopwatch::get_total_time' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:304: warning: documented symbol `long double Stopwatch::get_average_time' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:316: warning: documented symbol `long double Stopwatch::get_min_time' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:328: warning: documented symbol `long double Stopwatch::get_max_time' was not declared or defined.
+/home/user/tsid/src/utils/stop-watch.cpp:340: warning: documented symbol `long double Stopwatch::get_last_time' was not declared or defined.
+md_doc__porting:-1: warning: multiple use of section label 'md_doc__porting', (first occurrence: md_doc__porting)
+md_doc_a-features_a-spatial:-1: warning: multiple use of section label 'md_doc_a-features_a-spatial', (first occurrence: md_doc_a-features_a-spatial)
+md_doc_a-features_b-model-data:-1: warning: multiple use of section label 'md_doc_a-features_b-model-data', (first occurrence: md_doc_a-features_b-model-data)
+md_doc_a-features_c-joints:-1: warning: multiple use of section label 'md_doc_a-features_c-joints', (first occurrence: md_doc_a-features_c-joints)
+md_doc_a-features_d-model:-1: warning: multiple use of section label 'md_doc_a-features_d-model', (first occurrence: md_doc_a-features_d-model)
+md_doc_a-features_e-lie:-1: warning: multiple use of section label 'md_doc_a-features_e-lie', (first occurrence: md_doc_a-features_e-lie)
+md_doc_a-features_f-kinematic:-1: warning: multiple use of section label 'md_doc_a-features_f-kinematic', (first occurrence: md_doc_a-features_f-kinematic)
+md_doc_a-features_g-dynamic:-1: warning: multiple use of section label 'md_doc_a-features_g-dynamic', (first occurrence: md_doc_a-features_g-dynamic)
+md_doc_a-features_h-frames:-1: warning: multiple use of section label 'md_doc_a-features_h-frames', (first occurrence: md_doc_a-features_h-frames)
+md_doc_a-features_i-geometric-models:-1: warning: multiple use of section label 'md_doc_a-features_i-geometric-models', (first occurrence: md_doc_a-features_i-geometric-models)
+md_doc_a-features_intro:-1: warning: multiple use of section label 'md_doc_a-features_intro', (first occurrence: md_doc_a-features_intro)
+md_doc_a-features_j-analytical-derivatives:-1: warning: multiple use of section label 'md_doc_a-features_j-analytical-derivatives', (first occurrence: md_doc_a-features_j-analytical-derivatives)
+md_doc_a-features_k-automatic-differentiation:-1: warning: multiple use of section label 'md_doc_a-features_k-automatic-differentiation', (first occurrence: md_doc_a-features_k-automatic-differentiation)
+md_doc_a-features_l-python:-1: warning: multiple use of section label 'md_doc_a-features_l-python', (first occurrence: md_doc_a-features_l-python)
+md_doc_a-features_m-tests:-1: warning: multiple use of section label 'md_doc_a-features_m-tests', (first occurrence: md_doc_a-features_m-tests)
+md_doc_b-examples_a-model:-1: warning: multiple use of section label 'md_doc_b-examples_a-model', (first occurrence: md_doc_b-examples_a-model)
+md_doc_b-examples_ab-geometry-models:-1: warning: multiple use of section label 'md_doc_b-examples_ab-geometry-models', (first occurrence: md_doc_b-examples_ab-geometry-models)
+md_doc_b-examples_b-display:-1: warning: multiple use of section label 'md_doc_b-examples_b-display', (first occurrence: md_doc_b-examples_b-display)
+md_doc_b-examples_c-dynamics:-1: warning: multiple use of section label 'md_doc_b-examples_c-dynamics', (first occurrence: md_doc_b-examples_c-dynamics)
+md_doc_b-examples_d-contact:-1: warning: multiple use of section label 'md_doc_b-examples_d-contact', (first occurrence: md_doc_b-examples_d-contact)
+md_doc_b-examples_display_a-gepetto-viewer:-1: warning: multiple use of section label 'md_doc_b-examples_display_a-gepetto-viewer', (first occurrence: md_doc_b-examples_display_a-gepetto-viewer)
+md_doc_b-examples_display_b-meshcat-viewer:-1: warning: multiple use of section label 'md_doc_b-examples_display_b-meshcat-viewer', (first occurrence: md_doc_b-examples_display_b-meshcat-viewer)
+md_doc_b-examples_display_c-robot-wrapper-viewer:-1: warning: multiple use of section label 'md_doc_b-examples_display_c-robot-wrapper-viewer', (first occurrence: md_doc_b-examples_display_c-robot-wrapper-viewer)
+md_doc_b-examples_e-collisions:-1: warning: multiple use of section label 'md_doc_b-examples_e-collisions', (first occurrence: md_doc_b-examples_e-collisions)
+md_doc_b-examples_f-derivatives:-1: warning: multiple use of section label 'md_doc_b-examples_f-derivatives', (first occurrence: md_doc_b-examples_f-derivatives)
+md_doc_b-examples_g-code-generation:-1: warning: multiple use of section label 'md_doc_b-examples_g-code-generation', (first occurrence: md_doc_b-examples_g-code-generation)
+md_doc_b-examples_h-inverse-geometry:-1: warning: multiple use of section label 'md_doc_b-examples_h-inverse-geometry', (first occurrence: md_doc_b-examples_h-inverse-geometry)
+md_doc_b-examples_i-inverse-kinematics:-1: warning: multiple use of section label 'md_doc_b-examples_i-inverse-kinematics', (first occurrence: md_doc_b-examples_i-inverse-kinematics)
+md_doc_b-examples_intro:-1: warning: multiple use of section label 'md_doc_b-examples_intro', (first occurrence: md_doc_b-examples_intro)
+md_doc_b-examples_j-tsid:-1: warning: multiple use of section label 'md_doc_b-examples_j-tsid', (first occurrence: md_doc_b-examples_j-tsid)
+md_doc_b-examples_k-qp:-1: warning: multiple use of section label 'md_doc_b-examples_k-qp', (first occurrence: md_doc_b-examples_k-qp)
+md_doc_b-examples_l-postures:-1: warning: multiple use of section label 'md_doc_b-examples_l-postures', (first occurrence: md_doc_b-examples_l-postures)
+md_doc_b-examples_m-rrt:-1: warning: multiple use of section label 'md_doc_b-examples_m-rrt', (first occurrence: md_doc_b-examples_m-rrt)
+md_doc_b-examples_n-rl:-1: warning: multiple use of section label 'md_doc_b-examples_n-rl', (first occurrence: md_doc_b-examples_n-rl)
+md_doc_b-examples_o-reduced-model:-1: warning: multiple use of section label 'md_doc_b-examples_o-reduced-model', (first occurrence: md_doc_b-examples_o-reduced-model)
+md_doc_c-maths_a-overview:-1: warning: multiple use of section label 'md_doc_c-maths_a-overview', (first occurrence: md_doc_c-maths_a-overview)
+md_doc_c-maths_b-rigid-bodies:-1: warning: multiple use of section label 'md_doc_c-maths_b-rigid-bodies', (first occurrence: md_doc_c-maths_b-rigid-bodies)
+md_doc_c-maths_c-joints:-1: warning: multiple use of section label 'md_doc_c-maths_c-joints', (first occurrence: md_doc_c-maths_c-joints)
+md_doc_c-maths_d-articulated:-1: warning: multiple use of section label 'md_doc_c-maths_d-articulated', (first occurrence: md_doc_c-maths_d-articulated)
+md_doc_c-maths_dynamics:-1: warning: multiple use of section label 'md_doc_c-maths_dynamics', (first occurrence: md_doc_c-maths_dynamics)
+md_doc_c-maths_e-collisions:-1: warning: multiple use of section label 'md_doc_c-maths_e-collisions', (first occurrence: md_doc_c-maths_e-collisions)
+md_doc_c-maths_e-miscs:-1: warning: multiple use of section label 'md_doc_c-maths_e-miscs', (first occurrence: md_doc_c-maths_e-miscs)
+md_doc_c-maths_f-algorithms:-1: warning: multiple use of section label 'md_doc_c-maths_f-algorithms', (first occurrence: md_doc_c-maths_f-algorithms)
+md_doc_c-maths_intro:-1: warning: multiple use of section label 'md_doc_c-maths_intro', (first occurrence: md_doc_c-maths_intro)
+md_doc_c-maths_se3:-1: warning: multiple use of section label 'md_doc_c-maths_se3', (first occurrence: md_doc_c-maths_se3)
+md_doc_d-practical-exercises_1-directgeom:-1: warning: multiple use of section label 'md_doc_d-practical-exercises_1-directgeom', (first occurrence: md_doc_d-practical-exercises_1-directgeom)
+md_doc_d-practical-exercises_2-invgeom:-1: warning: multiple use of section label 'md_doc_d-practical-exercises_2-invgeom', (first occurrence: md_doc_d-practical-exercises_2-invgeom)
+md_doc_d-practical-exercises_3-invkine:-1: warning: multiple use of section label 'md_doc_d-practical-exercises_3-invkine', (first occurrence: md_doc_d-practical-exercises_3-invkine)
+md_doc_d-practical-exercises_4-dyn:-1: warning: multiple use of section label 'md_doc_d-practical-exercises_4-dyn', (first occurrence: md_doc_d-practical-exercises_4-dyn)
+md_doc_d-practical-exercises_5-planner:-1: warning: multiple use of section label 'md_doc_d-practical-exercises_5-planner', (first occurrence: md_doc_d-practical-exercises_5-planner)
+md_doc_d-practical-exercises_6-wpg:-1: warning: multiple use of section label 'md_doc_d-practical-exercises_6-wpg', (first occurrence: md_doc_d-practical-exercises_6-wpg)
+md_doc_d-practical-exercises_7-learn:-1: warning: multiple use of section label 'md_doc_d-practical-exercises_7-learn', (first occurrence: md_doc_d-practical-exercises_7-learn)
+md_doc_d-practical-exercises_intro:-1: warning: multiple use of section label 'md_doc_d-practical-exercises_intro', (first occurrence: md_doc_d-practical-exercises_intro)
+md_doc_e-implementation_a-overview:-1: warning: multiple use of section label 'md_doc_e-implementation_a-overview', (first occurrence: md_doc_e-implementation_a-overview)
+md_doc_e-implementation_b-sparsity:-1: warning: multiple use of section label 'md_doc_e-implementation_b-sparsity', (first occurrence: md_doc_e-implementation_b-sparsity)
+md_doc_e-implementation_c-crtp:-1: warning: multiple use of section label 'md_doc_e-implementation_c-crtp', (first occurrence: md_doc_e-implementation_c-crtp)
+md_doc_e-implementation_d-miscs:-1: warning: multiple use of section label 'md_doc_e-implementation_d-miscs', (first occurrence: md_doc_e-implementation_d-miscs)
+md_doc_e-implementation_intro:-1: warning: multiple use of section label 'md_doc_e-implementation_intro', (first occurrence: md_doc_e-implementation_intro)
+md_doc_f-benchmarks_a-overview:-1: warning: multiple use of section label 'md_doc_f-benchmarks_a-overview', (first occurrence: md_doc_f-benchmarks_a-overview)
+md_doc_f-benchmarks_b-howto:-1: warning: multiple use of section label 'md_doc_f-benchmarks_b-howto', (first occurrence: md_doc_f-benchmarks_b-howto)
+md_doc_f-benchmarks_intro:-1: warning: multiple use of section label 'md_doc_f-benchmarks_intro', (first occurrence: md_doc_f-benchmarks_intro)
+md_doc_g-success-stories_intro:-1: warning: multiple use of section label 'md_doc_g-success-stories_intro', (first occurrence: md_doc_g-success-stories_intro)
