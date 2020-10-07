@@ -46,6 +46,7 @@ namespace tsid
       m_M_ref.setZero();
       m_M_dot_mat.setZero();
       m_M_dot_mat_ref.setZero();
+      m_M_dot_dot_mat_ref.setZero();
       m_J.resize(6, robot.nv());
       m_J.setZero();
       Eigen::array<long int,3> dims = {6,6,robot.nv()};
@@ -132,10 +133,11 @@ namespace tsid
       return 3;
     }
 
-    void TaskManipEquality::setReference(const Matrix6 & M, const Matrix6 & M_dot)
+    void TaskManipEquality::setReference(const Matrix6 & M, const Matrix6 & M_dot, const Matrix6 & M_dot_dot)
     {
       m_M_ref = M;
       m_M_dot_mat_ref = M_dot;
+      m_M_dot_dot_mat_ref = M_dot_dot;
     }
 
     Index TaskManipEquality::frame_id() const
@@ -220,6 +222,20 @@ namespace tsid
           }
         }
       }
+
+
+      if(mode==3){
+        double *data_folded = folded.data();
+        for(long int k = 0; k < folded.dimension(2); k++){
+          for(long int i = 0; i < folded.dimension(0); i++){
+            for(long int j = 0; j < folded.dimension(1); j++){
+              // std::cout << "i " << i << " j " << j << " k "<< k << std::endl;
+              // std::cout << "M " << k << " " << i+j*folded.dimension(0) << std::endl;
+              data_folded[i + j*folded.dimension(0) + k*folded.dimension(0)*folded.dimension(1)] = M(k,i+j*folded.dimension(0));
+            }
+          }
+        }
+      }
     }
 
 
@@ -299,8 +315,12 @@ namespace tsid
 
     
       auto constraint_matrix = unfold(3,*m_MJ);
-
-     Eigen::MatrixXd constraint_matrix_dot = constraint_matrix-m_constraint_prev/dt;
+    
+    Eigen::MatrixXd constraint_matrix_dot = constraint_matrix-m_constraint_prev/dt;
+     if(m_constraint_prev.isZero(0)){
+        constraint_matrix_dot.setZero();
+     }
+     
       // if(init){
       //   constraint_matrix_dot.setZero();
       //   init = false;
@@ -313,7 +333,17 @@ namespace tsid
       m_M_dot_mat = unfold(1, *m_M_dot);
 
 
-      auto M_dot_dot  = m_Kp*spdLog(m_M,m_M_ref) + m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);
+      // auto M_dot_dot  = m_Kp*spdLog(m_M,m_M_ref) + m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);
+     auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
+    //  std::cout << "m_M \n" << m_M << std::endl;
+    //  std::cout << "(m_M_ref) \n" << m_M_ref << std::endl;
+    //  std::cout << "(m_M - m_M_ref) \n" << (m_M - m_M_ref) << std::endl;
+    //  std::cout << "(m_M_dot_mat - m_M_dot_mat_ref)  \n" << (m_M_dot_mat - m_M_dot_mat_ref)  << std::endl;
+    //  std::cout << "m_M_dot_mat  \n" << m_M_dot_mat << std::endl;
+    //  std::cout << "m_M_dot_mat_ref  \n" << m_M_dot_mat_ref << std::endl;
+    // std::cout << "m_M_dot_dot_mat_ref  \n" << m_M_dot_dot_mat_ref  << std::endl;
+      // auto M_dot_dot = m_M_dot_mat_ref - m_M_dot_mat / dt;
+
       // auto M_dot_dot  = m_Kp*(m_M - m_M_ref) + m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);
       // std::cout << "m_M " <<m_M << std::endl;
       // std::cout << "m_M_ref " << m_M_ref << std::endl;
@@ -324,9 +354,14 @@ namespace tsid
 
       Tensor<double,3,0,long int> M_dot_dot_T(M_dot_dot.rows(),M_dot_dot.cols(),1);
       fold(1,M_dot_dot, M_dot_dot_T);
-      auto a = -constraint_matrix.transpose();
-      Eigen::MatrixXd b  = -unfold(3,M_dot_dot_T).transpose() + constraint_matrix_dot.transpose()*v;
+      auto a = constraint_matrix.transpose();
+      Eigen::MatrixXd b  = unfold(3,M_dot_dot_T).transpose() - constraint_matrix_dot.transpose()*v;
       Eigen::VectorXd b_vec = Eigen::Map<Eigen::VectorXd>(b.data(), b.rows(), b.cols());
+
+
+    //  auto a  = -constraint_matrix.transpose();
+    //  Eigen::MatrixXd b  =   constraint_matrix_dot.transpose()*v;
+    //  Eigen::VectorXd b_vec = Eigen::Map<Eigen::VectorXd>(b.data(), b.rows(), b.cols());
   
       // std::cout << "M_dot_dot "<< M_dot_dot.rows() << " " << M_dot_dot.cols() << std::endl; 
       // std::cout <<"m_J " << m_J.rows()<< " "<<  m_J.cols() << std::endl;

@@ -61,7 +61,7 @@ namespace tsid
 
       const ConstraintBase &getConstraint() const;
 
-      void setReference(const Matrix6 & M, const Matrix6 & M_dot);
+      void setReference(const Matrix6 & M, const Matrix6 & M_dot, const Matrix6 & M_dot_dot);
 
   
       virtual void setMask(math::ConstRefVector mask);
@@ -83,7 +83,7 @@ namespace tsid
      
       
       Matrix6x m_J;//jacobian
-      Matrix6 m_M, m_M_ref, m_M_dot_mat, m_M_dot_mat_ref; //maniuplability
+      Matrix6 m_M, m_M_ref, m_M_dot_mat, m_M_dot_mat_ref, m_M_dot_dot_mat_ref; //maniuplability
       std::shared_ptr<Data::Tensor3x> m_MJ; //maniuplability jacobian 
       std::shared_ptr<Data::Tensor3x> m_H; //hessian
       std::shared_ptr<Data::Tensor3x> m_H_transpose; //derivative of the transpose of the jacobian
