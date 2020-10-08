@@ -135,6 +135,7 @@ namespace tsid
 
     void TaskManipEquality::setReference(const Matrix6 & M, const Matrix6 & M_dot, const Matrix6 & M_dot_dot)
     {
+      // std::cout << "inside setReference " << std::endl;
       m_M_ref = M;
       m_M_dot_mat_ref = M_dot;
       m_M_dot_dot_mat_ref = M_dot_dot;
@@ -145,7 +146,7 @@ namespace tsid
       return m_joint_id;
     }
 
-    const ConstraintBase & TaskManipEquality::getConstraint() const
+    const ConstraintEquality & TaskManipEquality::getConstraint() const
     {
       return m_constraint;
     }
@@ -258,6 +259,9 @@ namespace tsid
                                                     ConstRefVector v,
                                                     Data & data)
     {
+      // std::cout << "inside compute " << std::endl;
+      // std::cout << "q " << q << std::endl;
+      // std::cout << "v " << v << std::endl;
 
       // pinocchio::Data data_cp = data;
       // m_robot.jacobianWorld(data, m_joint_id, m_J);
@@ -281,7 +285,6 @@ namespace tsid
           }
         }
       }
-
 
 
 
@@ -314,7 +317,7 @@ namespace tsid
      fold(3,MJ_mat,*m_MJ);
 
     
-      auto constraint_matrix = unfold(3,*m_MJ);
+    auto constraint_matrix = unfold(3,*m_MJ);
     
     Eigen::MatrixXd constraint_matrix_dot = constraint_matrix-m_constraint_prev/dt;
      if(m_constraint_prev.isZero(0)){
@@ -334,29 +337,37 @@ namespace tsid
 
 
       // auto M_dot_dot  = m_Kp*spdLog(m_M,m_M_ref) + m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);
-     auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
+    //  auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
+     auto M_dot_dot  = -m_Kp*(m_M - m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
+    // auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);// + m_M_dot_dot_mat_ref;
+
     //  std::cout << "m_M \n" << m_M << std::endl;
     //  std::cout << "(m_M_ref) \n" << m_M_ref << std::endl;
     //  std::cout << "(m_M - m_M_ref) \n" << (m_M - m_M_ref) << std::endl;
+    //  std::cout << "spdLog(m_M,m_M_ref) \n" << spdLog(m_M,m_M_ref) << std::endl;
     //  std::cout << "(m_M_dot_mat - m_M_dot_mat_ref)  \n" << (m_M_dot_mat - m_M_dot_mat_ref)  << std::endl;
     //  std::cout << "m_M_dot_mat  \n" << m_M_dot_mat << std::endl;
     //  std::cout << "m_M_dot_mat_ref  \n" << m_M_dot_mat_ref << std::endl;
-    // std::cout << "m_M_dot_dot_mat_ref  \n" << m_M_dot_dot_mat_ref  << std::endl;
-      // auto M_dot_dot = m_M_dot_mat_ref - m_M_dot_mat / dt;
+    //  std::cout << "m_M_dot_dot_mat_ref  \n" << m_M_dot_dot_mat_ref  << std::endl;
+    //   // auto M_dot_dot = m_M_dot_mat_ref - m_M_dot_mat / dt;
 
       // auto M_dot_dot  = m_Kp*(m_M - m_M_ref) + m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);
       // std::cout << "m_M " <<m_M << std::endl;
       // std::cout << "m_M_ref " << m_M_ref << std::endl;
       // std::cout <<"m_Kp " << m_Kp << " m_Kd " << m_Kd << std::endl;
       // std::cout << "M_dot_dot " <<M_dot_dot << std::endl;
-      // std::cout << "m_M-m_M_ref " <<m_M-m_M_ref << std::endl;
-      // std::cout << "m_M_dot_mat-m_M_dot_mat_ref " <<m_M-m_M_ref << std::endl;
+      // // std::cout << "m_M-m_M_ref " <<m_M-m_M_ref << std::endl;
+      // // std::cout << "m_M_dot_mat-m_M_dot_mat_ref " <<m_M-m_M_ref << std::endl;
+      // std::cout << "M_dot_dot.rows() " <<M_dot_dot.rows() << std::endl;
+      // std::cout << "M_dot_dot.cols() " <<M_dot_dot.cols() << std::endl;
 
       Tensor<double,3,0,long int> M_dot_dot_T(M_dot_dot.rows(),M_dot_dot.cols(),1);
       fold(1,M_dot_dot, M_dot_dot_T);
       auto a = constraint_matrix.transpose();
       Eigen::MatrixXd b  = unfold(3,M_dot_dot_T).transpose() - constraint_matrix_dot.transpose()*v;
       Eigen::VectorXd b_vec = Eigen::Map<Eigen::VectorXd>(b.data(), b.rows(), b.cols());
+
+
 
 
     //  auto a  = -constraint_matrix.transpose();

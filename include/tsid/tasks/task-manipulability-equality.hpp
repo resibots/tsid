@@ -59,7 +59,7 @@ namespace tsid
                                     ConstRefVector v,
                                     Data &data);
 
-      const ConstraintBase &getConstraint() const;
+      const ConstraintEquality &getConstraint() const;
 
       void setReference(const Matrix6 & M, const Matrix6 & M_dot, const Matrix6 & M_dot_dot);
 

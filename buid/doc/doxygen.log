@@ -420,11 +420,11 @@ Possible candidates:
 /home/user/tsid/src/tasks/task-manipulability-equality.cpp:109: warning: documented symbol `void tsid::tasks::TaskManipEquality::Kd' was not declared or defined.
 /home/user/tsid/src/tasks/task-manipulability-equality.cpp:131: warning: documented symbol `int tsid::tasks::TaskManipEquality::dim' was not declared or defined.
 /home/user/tsid/src/tasks/task-manipulability-equality.cpp:136: warning: documented symbol `void tsid::tasks::TaskManipEquality::setReference' was not declared or defined.
-/home/user/tsid/src/tasks/task-manipulability-equality.cpp:143: warning: documented symbol `Index tsid::tasks::TaskManipEquality::frame_id' was not declared or defined.
-/home/user/tsid/src/tasks/task-manipulability-equality.cpp:148: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskManipEquality::getConstraint' was not declared or defined.
-/home/user/tsid/src/tasks/task-manipulability-equality.cpp:154: warning: documented symbol `Eigen::MatrixXd tsid::tasks::TaskManipEquality::unfold' was not declared or defined.
-/home/user/tsid/src/tasks/task-manipulability-equality.cpp:198: warning: documented symbol `void tsid::tasks::TaskManipEquality::fold' was not declared or defined.
-/home/user/tsid/src/tasks/task-manipulability-equality.cpp:256: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskManipEquality::compute' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:144: warning: documented symbol `Index tsid::tasks::TaskManipEquality::frame_id' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:149: warning: documented symbol `const ConstraintEquality & tsid::tasks::TaskManipEquality::getConstraint' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:155: warning: documented symbol `Eigen::MatrixXd tsid::tasks::TaskManipEquality::unfold' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:199: warning: documented symbol `void tsid::tasks::TaskManipEquality::fold' was not declared or defined.
+/home/user/tsid/src/tasks/task-manipulability-equality.cpp:257: warning: documented symbol `const ConstraintBase & tsid::tasks::TaskManipEquality::compute' was not declared or defined.
 /home/user/tsid/src/tasks/task-motion.cpp:28: warning: documented symbol `tsid::tasks::TaskMotion::TaskMotion' was not declared or defined.
 /home/user/tsid/src/tasks/task-motion.cpp:33: warning: documented symbol `void tsid::tasks::TaskMotion::setMask' was not declared or defined.
 /home/user/tsid/src/tasks/task-motion.cpp:38: warning: documented symbol `bool tsid::tasks::TaskMotion::hasMask' was not declared or defined.
