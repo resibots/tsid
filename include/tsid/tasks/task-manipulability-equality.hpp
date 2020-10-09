@@ -50,7 +50,8 @@ namespace tsid
 
       TaskManipEquality(const std::string &name,
                         RobotWrapper &robot,
-                        const std::string &frameName);
+                        const std::string &frameName,
+                        float dt);
 
       int dim() const;
 
@@ -74,6 +75,9 @@ namespace tsid
       Eigen::MatrixXd unfold(int mode,  Data::Tensor3x  T);
       void fold(int mode,const Eigen::MatrixXd & M, Data::Tensor3x & folded);
 
+
+      Eigen::MatrixXd to_compare() {return to_compare_;};
+
     protected:
       float m_Kp;
       float m_Kd;
@@ -93,8 +97,10 @@ namespace tsid
       std::shared_ptr<Data::Tensor3x> m_H_J;//J*m_H(3) to tensor
       std::shared_ptr<Data::Tensor3x> m_M_dot;//J*m_H(3) to tensor
 
+      Eigen::MatrixXd to_compare_;
+
       Eigen::MatrixXd m_constraint_prev;
-      float dt=0.001;
+      float m_dt;
       bool init = true;
 
       

@@ -29,16 +29,17 @@ namespace tsid
 
     TaskManipEquality::TaskManipEquality(const std::string & name,
                                      RobotWrapper & robot,
-                                     const std::string & frameName):
+                                     const std::string & frameName,
+                                     float dt):
       TaskMotion(name, robot),
       m_frame_name(frameName),
-      m_constraint(name, 6*6, robot.nv())
+      m_constraint(name, 6*6, robot.nv()),
+      m_dt(dt)
     {
       std::cout <<  " brgin init" << std::endl;
 
       assert(m_robot.model().existJointName(frameName));
       m_joint_id = m_robot.model().getJointId(frameName);
-
     
       m_constraint_prev.resize(robot.nv(),6*6);
       m_constraint_prev.setZero();
@@ -79,6 +80,7 @@ namespace tsid
 
       m_Kp = 1.0;
       m_Kd = 1.0;
+
 
       // Eigen::array<long int, 3> dims = {6, robot.nv(), robot.nv()};
       // m_H.resize({6, robot.nv(), robot.nv()});
@@ -266,7 +268,8 @@ namespace tsid
       // pinocchio::Data data_cp = data;
       // m_robot.jacobianWorld(data, m_joint_id, m_J);
       //  m_robot.frameJacobianWorld(data, m_joint_id, m_J);
-      getJointJacobian(m_robot.model(), data, m_joint_id, pinocchio::WORLD, m_J);
+
+       getJointJacobian(m_robot.model(), data, m_joint_id, pinocchio::WORLD, m_J);
 
       m_M = m_J*m_J.transpose();
 
@@ -307,7 +310,8 @@ namespace tsid
       Tensor<double,3,0,long int> H_t_J(m_J.rows(),m_H_transpose->dimension(1),m_H_transpose->dimension(2));
       fold(1,H_t_J_mat,H_t_J);
 
-
+      
+      
       Tensor<double,3,0,long int> H_J(m_H->dimension(0),m_J.rows(),m_H->dimension(2));
 
       fold(2,H_J_mat,H_J);
@@ -319,10 +323,14 @@ namespace tsid
     
     auto constraint_matrix = unfold(3,*m_MJ);
     
-    Eigen::MatrixXd constraint_matrix_dot = constraint_matrix-m_constraint_prev/dt;
+    Eigen::MatrixXd constraint_matrix_dot = (constraint_matrix-m_constraint_prev)/m_dt;
      if(m_constraint_prev.isZero(0)){
         constraint_matrix_dot.setZero();
      }
+      // std::cout << "m_constraint_prev " << m_constraint_prev <<  std::endl;
+      to_compare_.resize(m_constraint_prev.rows(), m_constraint_prev.cols());
+      to_compare_ = m_constraint_prev;
+
      
       // if(init){
       //   constraint_matrix_dot.setZero();
@@ -336,6 +344,10 @@ namespace tsid
       m_M_dot_mat = unfold(1, *m_M_dot);
 
 
+
+   
+
+
       // auto M_dot_dot  = m_Kp*spdLog(m_M,m_M_ref) + m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);
     //  auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
      auto M_dot_dot  = -m_Kp*(m_M - m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
@@ -343,7 +355,7 @@ namespace tsid
 
     //  std::cout << "m_M \n" << m_M << std::endl;
     //  std::cout << "(m_M_ref) \n" << m_M_ref << std::endl;
-    //  std::cout << "(m_M - m_M_ref) \n" << (m_M - m_M_ref) << std::endl;
+     
     //  std::cout << "spdLog(m_M,m_M_ref) \n" << spdLog(m_M,m_M_ref) << std::endl;
     //  std::cout << "(m_M_dot_mat - m_M_dot_mat_ref)  \n" << (m_M_dot_mat - m_M_dot_mat_ref)  << std::endl;
     //  std::cout << "m_M_dot_mat  \n" << m_M_dot_mat << std::endl;
@@ -367,6 +379,13 @@ namespace tsid
       Eigen::MatrixXd b  = unfold(3,M_dot_dot_T).transpose() - constraint_matrix_dot.transpose()*v;
       Eigen::VectorXd b_vec = Eigen::Map<Eigen::VectorXd>(b.data(), b.rows(), b.cols());
 
+
+
+      // to_compare_.resize(a.rows(), a.cols());
+      // to_compare_ = a;
+
+     
+     
 
 
 
