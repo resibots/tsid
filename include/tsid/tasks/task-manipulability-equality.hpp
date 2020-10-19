@@ -68,6 +68,7 @@ namespace tsid
       virtual void setMask(math::ConstRefVector mask);
       void Kp(float Kp);
       void Kd(float Kp);
+      void Ki(float Ki);
 
 
       Index frame_id() const;
@@ -81,13 +82,15 @@ namespace tsid
     protected:
       float m_Kp;
       float m_Kd;
+      float m_Ki;
       std::string m_frame_name;
       Index m_joint_id;
 
      
       
       Matrix6x m_J;//jacobian
-      Matrix6 m_M, m_M_ref, m_M_dot_mat, m_M_dot_mat_ref, m_M_dot_dot_mat_ref; //maniuplability
+      Matrix6 m_M, m_M_ref, m_M_dot_mat, m_M_dot_mat_ref, m_M_dot_dot_mat_ref, m_M_I; //maniuplability
+      Matrix6 m_M_dot_check, m_M_prev;
       std::shared_ptr<Data::Tensor3x> m_MJ; //maniuplability jacobian 
       std::shared_ptr<Data::Tensor3x> m_H; //hessian
       std::shared_ptr<Data::Tensor3x> m_H_transpose; //derivative of the transpose of the jacobian

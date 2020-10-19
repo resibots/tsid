@@ -48,6 +48,11 @@ namespace tsid
       m_M_dot_mat.setZero();
       m_M_dot_mat_ref.setZero();
       m_M_dot_dot_mat_ref.setZero();
+
+      m_M_dot_check.setZero();
+      m_M_prev.setZero();
+      m_M_I.setZero();
+
       m_J.resize(6, robot.nv());
       m_J.setZero();
       Eigen::array<long int,3> dims = {6,6,robot.nv()};
@@ -80,6 +85,7 @@ namespace tsid
 
       m_Kp = 1.0;
       m_Kd = 1.0;
+      m_Ki = 1.0;
 
 
       // Eigen::array<long int, 3> dims = {6, robot.nv(), robot.nv()};
@@ -111,6 +117,11 @@ namespace tsid
     void TaskManipEquality::Kd(float Kd)
     {
       m_Kd = Kd;
+    }
+
+    void TaskManipEquality::Ki(float Ki)
+    {
+      m_Ki = Ki;
     }
 
 
@@ -328,8 +339,8 @@ namespace tsid
         constraint_matrix_dot.setZero();
      }
       // std::cout << "m_constraint_prev " << m_constraint_prev <<  std::endl;
-      to_compare_.resize(m_constraint_prev.rows(), m_constraint_prev.cols());
-      to_compare_ = m_constraint_prev;
+      // to_compare_.resize(m_constraint_prev.rows(), m_constraint_prev.cols());
+      // to_compare_ = m_constraint_prev;
 
      
       // if(init){
@@ -343,14 +354,23 @@ namespace tsid
       fold(3,M_dot,*m_M_dot); 
       m_M_dot_mat = unfold(1, *m_M_dot);
 
-
-
-   
-
+      // if(!m_M_prev.isZero())
+      // {
+      //   m_M_dot_check = (m_M - m_M_prev) / m_dt;
+      //   std::cout <<"m_M_dot_check \n" << m_M_dot_check << std::endl;
+      //   std::cout <<"m_M_dot_mat \n" << m_M_dot_mat << std::endl;
+      //   std::cout <<"m_M_dot_check -  m_M_dot_mat\n" << m_M_dot_check - m_M_dot_mat << std::endl;
+      // }
+      // m_M_prev = m_M;
 
       // auto M_dot_dot  = m_Kp*spdLog(m_M,m_M_ref) + m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);
-    //  auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
-     auto M_dot_dot  = -m_Kp*(m_M - m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
+    //  auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);// + m_M_dot_dot_mat_ref;
+    // auto M_dot_dot  = -m_Kp*(m_M - m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
+    auto M_dot_dot  = -m_Kp*(m_M - m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) - m_Ki*m_M_I + m_M_dot_dot_mat_ref;
+    m_M_I += (m_M - m_M_ref);
+
+    to_compare_.resize(m_M.rows(),m_M.cols());
+    to_compare_ = (m_M - m_M_ref);
     // auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);// + m_M_dot_dot_mat_ref;
 
     //  std::cout << "m_M \n" << m_M << std::endl;
