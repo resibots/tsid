@@ -19,6 +19,7 @@
 #include "tsid/tasks/task-manipulability-equality.hpp"
 #include "tsid/robots/robot-wrapper.hpp"
 #include <unsupported/Eigen/MatrixFunctions>
+#include <math.h>  
 namespace tsid
 {
   namespace tasks
@@ -86,6 +87,8 @@ namespace tsid
       m_Kp = 1.0;
       m_Kd = 1.0;
       m_Ki = 1.0;
+
+      m_affine_invariant = 0.0;
 
 
       // Eigen::array<long int, 3> dims = {6, robot.nv(), robot.nv()};
@@ -256,8 +259,58 @@ namespace tsid
 
     Eigen::MatrixXd spdLog(const Eigen::MatrixXd & X,const Eigen::MatrixXd & Y)
     {
-      return X.pow(0.5)*X.pow(-0.5)*Y*X.pow(-0.5).log()*X.pow(0.5);
+      return X.pow(0.5)*(X.pow(-0.5)*Y*X.pow(-0.5)).log()*X.pow(0.5);
       // return X*((X.inverse()*Y).array().log()).matrix();
+    }
+
+    // double affineInvariantDist(const Eigen::MatrixXd & X,const Eigen::MatrixXd & Y)
+    // {
+    //   std::cout << "X.pow(0.5) " << X.pow(0.5) << std::endl;
+    //   std::cout << "(X.pow(-0.5)*Y*X.pow(-0.5)) " << (X.pow(-0.5)*Y*X.pow(-0.5)) << std::endl;
+    //   std::cout << "(X.pow(-0.5)*Y*X.pow(-0.5)).array().log().matrix() " << (X.pow(-0.5)*Y*X.pow(-0.5)).array().log().matrix() << std::endl;
+    //   Eigen::MatrixXd toto = (X.pow(-0.5)*Y*X.pow(-0.5)).array().log().matrix();
+    //   return toto.norm();
+    //   // return X*((X.inverse()*Y).array().log()).matrix();
+    // }
+
+
+    Eigen::MatrixXd spdLog2(const Eigen::MatrixXd & X,const Eigen::MatrixXd & Y)
+    {
+      Eigen::MatrixXd result(6,6);
+      result.setZero();
+
+      assert(X.rows() == 6);
+      assert(Y.cols() == 6);
+      assert(X.rows() == 6);
+      assert(Y.cols() == 6);
+
+      auto tmp = Y*X.inverse();
+      // std::cout << "tmp " <<  tmp << std::endl;
+      Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolver(tmp);
+      if (eigensolver.info() != Eigen::Success)
+      {
+        std::cout << "Solver did not find eigenvalues "<< std::endl;
+      }
+      else
+      {
+        auto eigen_values = eigensolver.eigenvalues();
+        auto eigen_vectors = eigensolver.eigenvectors();
+        Eigen::DiagonalMatrix<double, 2> diag(6, 6);
+        // std::cout << "(eigen_values.array().log()).matrix()" << (eigen_values.array().log()).matrix() << std::endl;
+        // std::cout <<"eigen_vectors " <<  eigen_vectors << std::endl;
+        // std::cout <<"Y " <<  Y << std::endl;
+        // std::cout <<"eigen_vectors.inverse() " <<  eigen_vectors.inverse() << std::endl;
+        // std::cout <<"res " <<  Y * eigen_vectors *  (eigen_values.array().log()).matrix() * eigen_vectors.inverse() << std::endl;
+        Eigen::MatrixXd tmp2 = (eigen_values.array().log()).matrix();
+        for(uint i = 0; i < eigen_values.size() ; i++){
+          if(std::isnan(tmp2(i,0))){
+            tmp2(i,0) = 0;
+            std::cout << "nan " << eigen_values[i]  <<std::endl;
+          }
+        }
+        result = Y * eigen_vectors *  tmp2 * eigen_vectors.inverse();
+      }
+      return result;
     }
 
     Eigen::VectorXd mandelNotation(const Eigen::MatrixXd & X)
@@ -366,9 +419,23 @@ namespace tsid
       // auto M_dot_dot  = m_Kp*spdLog(m_M,m_M_ref) + m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);
     //  auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);// + m_M_dot_dot_mat_ref;
     // auto M_dot_dot  = -m_Kp*(m_M - m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
+   
+   
+   
     auto M_dot_dot  = -m_Kp*(m_M - m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) - m_Ki*m_M_I + m_M_dot_dot_mat_ref;
     m_M_I += (m_M - m_M_ref);
-
+    // std::cout << "(m_M - m_M_ref) " << (m_M - m_M_ref) << std::endl;
+    // std::cout << "spdLog2(m_M,m_M) " << spdLog2(m_M,m_M) << std::endl;
+    // auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
+    // m_affine_invariant = affineInvariantDist(m_M,m_M_ref);
+    // std::cout << "m_Kp " << m_Kp << std::endl;
+    // std::cout << "m_Kd " << m_Kd << std::endl;
+    // std::cout << "spdLog2(m_M,m_M_ref) " << spdLog2(m_M,m_M_ref) << std::endl;
+    // std::cout << "m_M_dot_mat " << m_M_dot_mat << std::endl;
+    // std::cout << "m_M_dot_mat_ref " << m_M_dot_mat_ref << std::endl;
+    //  std::cout << "m_M " << m_M << std::endl;
+    //  std::cout << "m_M_ref " << m_M_ref << std::endl;
+    // std::cout << "M_dot_dot " << M_dot_dot << std::endl;
     to_compare_.resize(m_M.rows(),m_M.cols());
     to_compare_ = (m_M - m_M_ref);
     // auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);// + m_M_dot_dot_mat_ref;
@@ -396,6 +463,9 @@ namespace tsid
       Tensor<double,3,0,long int> M_dot_dot_T(M_dot_dot.rows(),M_dot_dot.cols(),1);
       fold(1,M_dot_dot, M_dot_dot_T);
       auto a = constraint_matrix.transpose();
+          // // std::cout << "M_dot_dot_T " <<  M_dot_dot_T << std::endl;
+      // std::cout << "constraint_matrix_dot " <<  constraint_matrix_dot << std::endl;
+      // std::cout << "v " <<  v << std::endl;
       Eigen::MatrixXd b  = unfold(3,M_dot_dot_T).transpose() - constraint_matrix_dot.transpose()*v;
       Eigen::VectorXd b_vec = Eigen::Map<Eigen::VectorXd>(b.data(), b.rows(), b.cols());
 
@@ -426,13 +496,15 @@ namespace tsid
       // std::cout << "b " << b.rows()<< " "<<  b.cols() << std::endl;
 
 
-
+      
       Matrix3x Jcom = m_robot.Jcom(data);
       Jcom.setZero();
+      // std::cout << "a " << a << std::endl;
       m_constraint.setMatrix(a);
       Vector3 toto;
       toto.setZero();
       m_constraint.setVector(b_vec);
+      // std::cout << "b_vec " << b_vec << std::endl;
       return m_constraint;
     }
   }

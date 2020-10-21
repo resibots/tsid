@@ -78,6 +78,8 @@ namespace tsid
 
 
       Eigen::MatrixXd to_compare() {return to_compare_;};
+      // double taff_inv_dist() {return to_compare_;};
+
 
     protected:
       float m_Kp;
@@ -105,6 +107,8 @@ namespace tsid
       Eigen::MatrixXd m_constraint_prev;
       float m_dt;
       bool init = true;
+
+      double m_affine_invariant;
 
       
 

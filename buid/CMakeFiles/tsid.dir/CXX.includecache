@@ -1055,6 +1055,8 @@ tsid/robots/robot-wrapper.hpp
 /home/user/tsid/src/tasks/tsid/robots/robot-wrapper.hpp
 unsupported/Eigen/MatrixFunctions
 -
+math.h
+-
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

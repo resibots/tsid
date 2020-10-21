@@ -330,6 +330,13 @@
       <arglist>(const Eigen::MatrixXd &amp;X, const Eigen::MatrixXd &amp;Y)</arglist>
     </member>
     <member kind="function">
+      <type>Eigen::MatrixXd</type>
+      <name>spdLog2</name>
+      <anchorfile>namespacetsid_1_1tasks.html</anchorfile>
+      <anchor>a4b7334b16ab74fc50e70d0365f6a69f8</anchor>
+      <arglist>(const Eigen::MatrixXd &amp;X, const Eigen::MatrixXd &amp;Y)</arglist>
+    </member>
+    <member kind="function">
       <type>Eigen::VectorXd</type>
       <name>mandelNotation</name>
       <anchorfile>namespacetsid_1_1tasks.html</anchorfile>
@@ -543,6 +550,13 @@
       <name>spdLog</name>
       <anchorfile>namespacetsid_1_1tasks.html</anchorfile>
       <anchor>aa48ebd3326993a371f8fd1642c947c64</anchor>
+      <arglist>(const Eigen::MatrixXd &amp;X, const Eigen::MatrixXd &amp;Y)</arglist>
+    </member>
+    <member kind="function">
+      <type>Eigen::MatrixXd</type>
+      <name>spdLog2</name>
+      <anchorfile>namespacetsid_1_1tasks.html</anchorfile>
+      <anchor>a4b7334b16ab74fc50e70d0365f6a69f8</anchor>
       <arglist>(const Eigen::MatrixXd &amp;X, const Eigen::MatrixXd &amp;Y)</arglist>
     </member>
     <member kind="function">

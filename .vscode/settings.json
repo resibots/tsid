@@ -6,6 +6,7 @@
         "string": "cpp",
         "vector": "cpp",
         "mixinvector": "cpp",
-        "buffered_value": "cpp"
+        "buffered_value": "cpp",
+        "core": "cpp"
     }
 }

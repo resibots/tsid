@@ -95,6 +95,7 @@ var searchData=
   ['solvewithdampingfromsvd',['solveWithDampingFromSvd',['../namespacetsid_1_1math.html#a787bdcd3aa327a945b173a4ee0282f8b',1,'tsid::math']]],
   ['spatialaxis',['SpatialAxis',['/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/structpinocchio_1_1SpatialAxis.html',1,'pinocchio']]],
   ['spdlog',['spdLog',['../namespacetsid_1_1tasks.html#aa48ebd3326993a371f8fd1642c947c64',1,'tsid::tasks']]],
+  ['spdlog2',['spdLog2',['../namespacetsid_1_1tasks.html#a4b7334b16ab74fc50e70d0365f6a69f8',1,'tsid::tasks']]],
   ['specialeuclideanoperationtpl',['SpecialEuclideanOperationTpl',['/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/structpinocchio_1_1SpecialEuclideanOperationTpl.html',1,'pinocchio']]],
   ['specialeuclideanoperationtpl_3c_202_2c_20_5fscalar_2c_20_5foptions_20_3e',['SpecialEuclideanOperationTpl&lt; 2, _Scalar, _Options &gt;',['/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/structpinocchio_1_1SpecialEuclideanOperationTpl_3_012_00_01__Scalar_00_01__Options_01_4.html',1,'pinocchio']]],
   ['specialeuclideanoperationtpl_3c_203_2c_20_5fscalar_2c_20_5foptions_20_3e',['SpecialEuclideanOperationTpl&lt; 3, _Scalar, _Options &gt;',['/home/pal/ros_ws/devel/share/doc/pinocchio/doxygen-html/structpinocchio_1_1SpecialEuclideanOperationTpl_3_013_00_01__Scalar_00_01__Options_01_4.html',1,'pinocchio']]],
