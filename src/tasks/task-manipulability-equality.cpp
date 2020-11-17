@@ -420,10 +420,43 @@ namespace tsid
     //  auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);// + m_M_dot_dot_mat_ref;
     // auto M_dot_dot  = -m_Kp*(m_M - m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
    
-   
-   
+    // Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolverM(m_M);
+    // Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolverMref(m_M_ref);
+
+    // if ((eigensolverM.info() != Eigen::Success) || (eigensolverMref.info() != Eigen::Success) )
+    // {
+    //   std::cout << "Did not find eigenvalues in the task "<< std::endl;
+    // }
+  
+    // Eigen::MatrixXd D = eigensolverM.eigenvalues().asDiagonal();
+    // Eigen::MatrixXd V = eigensolverM.eigenvectors();
+    // Eigen::MatrixXd U = eigensolverMref.eigenvectors();
+    // Eigen::MatrixXd Dref = eigensolverMref.eigenvalues().asDiagonal();
+
+    // // std::cout << "D \n" << D << std::endl;
+    // // std::cout << "Dref \n" << D << std::endl;
+    // // std::cout << "V \n" << V << std::endl;
+    // // std::cout << "U \n" << U << std::endl;
+    // Eigen::MatrixXd id(6,6);
+    // id.setIdentity();
+     
+    // auto M_dot_dot  = -m_Kp*(m_M - U * D * U.inverse()) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) - m_Ki*m_M_I + m_M_dot_dot_mat_ref;
+
+
+
+
+
+
+
+
+
     auto M_dot_dot  = -m_Kp*(m_M - m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) - m_Ki*m_M_I + m_M_dot_dot_mat_ref;
     m_M_I += (m_M - m_M_ref);
+
+
+
+
+
     // std::cout << "(m_M - m_M_ref) " << (m_M - m_M_ref) << std::endl;
     // std::cout << "spdLog2(m_M,m_M) " << spdLog2(m_M,m_M) << std::endl;
     // auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref) + m_M_dot_dot_mat_ref;
@@ -438,6 +471,7 @@ namespace tsid
     // std::cout << "M_dot_dot " << M_dot_dot << std::endl;
     to_compare_.resize(m_M.rows(),m_M.cols());
     to_compare_ = (m_M - m_M_ref);
+    // to_compare_ = (m_M - U * D * U.inverse());
     // auto M_dot_dot  = -m_Kp*spdLog(m_M,m_M_ref) - m_Kd*(m_M_dot_mat - m_M_dot_mat_ref);// + m_M_dot_dot_mat_ref;
 
     //  std::cout << "m_M \n" << m_M << std::endl;
