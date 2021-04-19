@@ -150,7 +150,7 @@ namespace tsid
 
   protected:
     std::string m_name;
-    RobotWrapper m_robot;
+    RobotWrapper & m_robot;
     bool m_verbose;
   };
 
