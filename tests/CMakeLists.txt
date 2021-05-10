@@ -52,6 +52,9 @@ ADD_TEST_CFLAGS(contacts '-DTSID_SOURCE_DIR=\\\"${${PROJECT_NAME}_SOURCE_DIR}\\\
 ADD_TESTCASE(tsid-formulation)
 ADD_TEST_CFLAGS(tsid-formulation '-DTSID_SOURCE_DIR=\\\"${${PROJECT_NAME}_SOURCE_DIR}\\\"')
 
+ADD_TESTCASE(deterministic)
+ADD_TEST_CFLAGS(deterministic '-DTSID_SOURCE_DIR=\\\"${${PROJECT_NAME}_SOURCE_DIR}\\\"')
+
 ADD_TESTCASE(math_utils)
 ADD_TESTCASE(hqp_solvers)
 
